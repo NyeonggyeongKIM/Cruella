@@ -1,0 +1,372 @@
+/* index style sheet */
+
+* {margin: 0; padding: 0; box-sizing: border-box; color: inherit;
+  list-style: none; text-decoration: none; text-align: center; font-family: "Shadows Into Light";}
+
+  a{display: block; }
+
+  ul,li{cursor: pointer;}
+
+
+  /* container */
+  #container {
+    width: 100vw;
+    height: 400vh;
+  }
+
+  section {
+    width: 100vw;
+    height: 100vh;
+    background-color: #e82b17;
+    /* border-bottom: 1px solid black; */
+  }
+
+  /* menu */
+  nav {
+    width: 100vw;
+    height: 50px;
+    position: fixed;
+    top: 50%;
+    transform: skewY(17deg);
+    /* display: none; */
+  }
+
+  #main {
+    width: 100%;
+    height: 50px;
+    background-color: white;
+    display: flex;
+  }
+
+  .main-menu {
+    width: 20%;
+    height: 50px;
+    z-index: 3;
+    line-height: 50px;
+    font-size: 28px;
+  }
+
+  #sub-box {
+    position: fixed;
+    top: 29%;
+    width: 100vw;
+    height: 200px;
+    background-color: white;
+    display: flex;
+    padding-top: 30px;
+    transform: skewY(17deg);
+    /* display: none; */
+  }
+
+  .sub {
+    width: 14.3%;
+    height: 200px;
+  }
+
+  .sub-menu {
+    height: 50px;
+    line-height: 50px;
+    font-size: 20px;
+  }
+
+  .sub-menu:hover {
+    background-color: black;
+    color: white;
+  }
+
+  #menu-btn {
+    width: 100px;
+    height: 50px;
+    background-color: white;
+    position: fixed;
+    top: 87%;
+    right: 0;
+    transform: skewY(17deg);
+    z-index: 4;
+    line-height: 50px;
+    cursor: pointer;
+  }
+
+
+  /* header */
+  header {
+    width: 100vw;
+    height: 200px;
+    background-color: black;
+    position: absolute;
+    top: 0;
+  }
+
+  #logo-box {
+    width: 200px;
+    height: 100%;
+    margin: 0 auto;
+    padding-top: 40px;
+  }
+
+  #logo-box>img {
+    width: 200px;
+  }
+
+  /* main1 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+  #main1 {
+    justify-content: space-around;
+    z-index: 0;
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+  }
+
+  #main1 p {
+    opacity: 0.8;
+  }
+
+  #main1 p:nth-child(1) {
+    position: absolute;
+    top: 28%;
+    left: 27%;
+    font-size: 7rem;
+    transform: skew(10deg, -10deg);
+  }
+
+  #main1 p:nth-child(2) {
+    position: absolute;
+    top: 42%;
+    left: 28%;
+    font-size: 7rem;
+    transform: skew(12deg,-12deg);
+  }
+
+  #main1 p:nth-child(3) {
+    position: absolute;
+    top: 30%;
+    right: 19%;
+    font-size: 7rem;
+    line-height: 120px;
+    transform: skew(-12deg,12deg);
+  }
+
+  #main1 p>span {
+    color: white;
+  }
+
+  #cruella {
+    width: 30vw;
+    height: 80vh;
+    position: relative;
+    top: 200px;
+    z-index: 0;
+    margin: 0 auto;
+  }
+
+  #cruella>img {
+    height: 80vh;
+    /* z-index: 0; */
+  }
+
+  #button1 {
+    width: 10vw;
+    height: 6vh;
+    background-color: white;
+    cursor: pointer;
+    line-height: 6vh;
+    font-size: 1.3rem;
+    border-radius: 0px 20px 20px 0px;
+  }
+
+  #button2 {
+    width: 10vw;
+    height: 6vh;
+    background-color: white;
+    cursor: pointer;
+    line-height: 6vh;
+    font-size: 1.3rem;
+    border-radius: 20px 0px 0px 20px;
+  }
+
+
+  /* main2++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+  #main2 {
+    position: relative;
+  }
+
+  h2 {
+    position: absolute;
+    right: 10%;
+    top: 5%;
+    z-index: 3;
+  }
+
+  h2 img {
+    width: 550px;
+  }
+
+  #main2 div:nth-child(2) {
+    width: 20%;
+    position: absolute;
+    left: 13%;
+    top: 21%;
+    z-index: 2;
+  }
+
+  #main2 div:nth-child(2) img {
+    height: 420px;
+  }
+
+  #main2 div:nth-child(3) {
+    width: 20%;
+    position: absolute;
+    bottom: 20%;
+    left: 16%;
+    z-index: 3;
+  }
+
+  #main2 div:nth-child(3) img {
+    height: 260px;
+  }
+
+  #main2 div:nth-child(4) {
+    width: 40%;
+    position: absolute;
+    left: 30%;
+    top: 47%;
+    transform: translate(0, -50%);
+    z-index: 2;
+  }
+
+  #main2 div:nth-child(5) {
+    position: absolute;
+    z-index: 4;
+    bottom: 2%;
+    right: 35%;
+    transform: skew(7deg,-7deg);
+  }
+
+  #main2 div:nth-child(5) img {
+    height: 340px;
+  }
+
+  #main2 div:nth-child(6) {
+    position: absolute;
+    z-index: 5;
+    right: 20%;
+    bottom: 5%;
+    transform: skew(-5deg,5deg);
+  }
+
+  #main2 div:nth-child(6) img {
+    height: 360px;
+  }
+
+  #main2 div:nth-child(7) {
+    position: absolute;
+    z-index: 0;
+    left: 20%;
+    top: 3%;
+  }
+
+  #text1 {
+    position: absolute;
+    bottom: 13%;
+    left: 26%;
+  }
+
+  /* main3 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+
+  #main3 {
+    position: relative;
+  }
+
+  h1 {
+    position: absolute;
+    top: 24%;
+    left: 11%;
+    z-index: 7;
+    width: 500px;
+  }
+
+  h1 img {
+    width: 100%;
+  }
+
+  #main3>div:nth-child(2) {
+    width: 720px;
+    height: 507px;
+    position: absolute;
+    top: 35%;
+    left: 9%;
+  }
+
+  #main3>div:nth-child(3) {
+    width: 380px;
+    height: 320px;
+    position: absolute;
+    left: 17%;
+    top: 33%;
+  }
+
+  #main3>div:nth-child(4) {
+    width: 630px;
+    height: 530px;
+    position: absolute;
+    right: 10%;
+    top: 5%;
+  }
+
+  #main3>div:nth-child(5) {
+    width: 550px;
+    height: 665px;
+    position: absolute;
+    right: 15%;
+    top: 13%;
+    z-index: 7;
+  }
+
+  #main3>div:nth-child(6) {
+    width: 300px;
+    height: 336px;
+    position: absolute;
+    top: 52%;
+    left: 24%;
+    z-index: 3;
+  }
+
+  #main3>div:nth-child(6) img {
+    width: 300px;
+  }
+
+  #main3>div:nth-child(7) {
+    width: 220px;
+    z-index: 5;
+    position: absolute;
+    left: 45%;
+    bottom: 2%;
+    transform: translate(-50%,0);
+    transform: skew(7deg,-7deg);
+  }
+
+  #main3>div:nth-child(7) img {
+    width: 260px;
+  }
+
+  #text2 {
+    width: 350px;
+    height: 450px;
+    /* background-color: gainsboro; */
+    position: absolute;
+    top: 27%;
+    left: 38%;
+  }
+
+  /* main4 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+
+  #main4 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  #video {
+    width: 80vw;
+    margin: 0 auto;
+  }
