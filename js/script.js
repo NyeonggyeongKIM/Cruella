@@ -62,15 +62,27 @@ let saTriggerHeight = 0;
 let saTriggerMargin = 0;
 
 const saFunc = function(){
+  // .sa 클래스를 가진 NodeList for of loop
   for(const element of saElementList){
+    // saTriggerHeight 는 0 으로 init 
+    // 윈도우 
+    console.log(window.innerHeight);
+    // window.innerHeight : 화면 높이값 만큼
     if(window.innerHeight > saTriggerHeight){
-      let delay = (element.dataset.saDelay) ? element.dataset.delay : 0;
+      // if문 화면 높이값이 saTriggerHeight 보다 값이 높다면 참 실행
+      // let delay = (element.dataset.saDelay) ? element.dataset.Delay : 0;
+      // 
+      // 삼항연산자 참구문 실행 부분 오타
+      let delay = (element.dataset.saDelay) ? element.dataset.saDelay : 0;
+      // sa-delay data 속성은 각각 항목마다 다르다.
       setTimeout(function(){
         element.classList.add('show');
+        // delay 값은 
       }, delay);
     }
   }
 }
 
-window.addEventListener('load' , saFunc);
+// script 태그가 맨 아래에 읽히도록 마크업되었기때문에 일단 주석처리
+// window.addEventListener('load' , saFunc);
 window.addEventListener('scroll' , saFunc);
