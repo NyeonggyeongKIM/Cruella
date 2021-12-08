@@ -54,3 +54,23 @@ closeBtn.addEventListener('click', ()=>{
 });
 
 
+// scroll event
+
+const saDefaultMargin = 100;
+const saElementList = document.querySelectorAll('.sa');
+let saTriggerHeight = 0;
+let saTriggerMargin = 0;
+
+const saFunc = function(){
+  for(const element of saElementList){
+    if(window.innerHeight > saTriggerHeight){
+      let delay = (element.dataset.saDelay) ? element.dataset.delay : 0;
+      setTimeout(function(){
+        element.classList.add('show');
+      }, delay);
+    }
+  }
+}
+
+window.addEventListener('load' , saFunc);
+window.addEventListener('scroll' , saFunc);
